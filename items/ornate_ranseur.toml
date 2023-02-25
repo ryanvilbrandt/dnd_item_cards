@@ -1,0 +1,8 @@
+name = "Ornate Ranseur"
+type = "treasure"
+requires_attunement = false
+image_path = "ranseur.jpg"
+description = """A glittering metal-and-ivory ranseur pulled from the grip of the red marble statue. As much a work of art as a weapon.
+
+Worth 400 gp
+"""
