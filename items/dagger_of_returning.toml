@@ -1,0 +1,7 @@
+name = "Cold iron dagger of returning"
+type = "weapon, uncommon"
+requires_attunement = false
+image_path = "dagger_of_returning.png"
+skip = true
+description = """When this dagger is thrown as part of an attack, after the attack hits or misses, it disappears with a pop and a flash of light, and reappears in the thrower's hand.
+"""

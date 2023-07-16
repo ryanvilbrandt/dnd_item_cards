@@ -1,0 +1,9 @@
+name = "Tiny Black Silk Gown"
+type = "treasure"
+requires_attunement = false
+image_path = "tiny_black_silk_gown.png"
+skip = true
+description = """
+This black gown is sized for a Tiny creature, and represents a very old-fashioned aesthetic. From the tattered edges, it looks well-worn though not well-kept. But enough of the silk is in good shape that it might be salvaged as worthwhile material for some other project.
+
+Worth 25gp"""

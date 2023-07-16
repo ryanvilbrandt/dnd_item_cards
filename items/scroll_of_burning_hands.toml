@@ -2,7 +2,5 @@ name = "Scroll of Burning Hands"
 type = "scroll, common"
 requires_attunement = false
 image_path = "magic_scroll.webp"
-description = """This scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, you must make a spellcasting ability check to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
-
-Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The save DC for any spell cast from this scroll is 13.
-"""
+skip = true
+description = """This scroll can be used to cast the spell Burning Hands, with a save DC 13. See the wiki for the full rules on Spell Scrolls."""

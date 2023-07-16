@@ -1,0 +1,9 @@
+name = "Unholy Symbol of Lamashtu"
+type = "treasure"
+requires_attunement = false
+image_path = "symbol_of_lamashtu.jpg"
+skip = true
+description = """
+This obsidion talisman has been shaped into the unholy symbol of the goddess Lamashtu, the Mother of Monsters. The eyes of the three-eyed jackal have been replaced with red stones, and seem to glimmer in the light.
+
+Worth 10gp"""

@@ -5,16 +5,16 @@ from PIL import ImageFont, ImageDraw, Image, ImageOps
 
 from enums import HAlign, VAlign
 
-DEBUG_TEXT_BOX_BORDERS = True
+DEBUG_TEXT_BOX_BORDERS = False
 FONTS_FOLDER = os.environ["FONTS_FOLDER"]  # Usually found at C:\Users\<user>\AppData\Local\Microsoft\Windows\Fonts\
-DEFAULT_FONT = os.path.join(FONTS_FOLDER, "Noteworthy")
+DEFAULT_FONT = "fonts/Noteworthy-Lt.ttf"
 
 
 def open_image(filepath: str) -> Image:
     return Image.open(filepath)
 
 
-def build_font(font_name, font_size):
+def build_font(font_name, font_size) -> ImageFont:
     return ImageFont.truetype(font_name, font_size)
 
 
@@ -91,6 +91,7 @@ class TextBox:
             font = build_font(font_name, font_size)
             text_lines, block_width, block_height = self.get_text_block_size(text, font)
             if block_width <= width and block_height <= height:
+                # print(f"Final font size: {font_size}")
                 return text_lines, font
             font_size -= 1
         else:
@@ -111,6 +112,7 @@ class TextBox:
             )
         else:
             font = build_font(self.font_name, self.font_size)
+            # print(f"Final font size: {self.font_size}")
             wrapped_text = self.wrap_text(text, font, self.height if self.use_height_for_text_wrap else self.width)
             text_lines = wrapped_text.split('\n')
 
@@ -286,12 +288,11 @@ def get_anchors(x: int, y: int, width: int, height: int, halign: HAlign, valign:
 
 def add_image(im: Image, picture_path: str, x: int, y: int, width: int, height: int,
               halign: HAlign = HAlign.CENTER, valign: VAlign = VAlign.CENTER):
-    draw_box(im, x, y, width, height)
+    if DEBUG_TEXT_BOX_BORDERS:
+        draw_box(im, x, y, width, height)
     picture: Image = Image.open(f"images/{picture_path}")
-    print(picture.size)
     picture_ratio = picture.size[0] / picture.size[1]
     background_ratio = width / height
-    print(f"{picture_ratio} / {background_ratio}")
     if picture_ratio < background_ratio:
         new_h = height
         new_w = int(height * picture_ratio)
@@ -304,7 +305,10 @@ def add_image(im: Image, picture_path: str, x: int, y: int, width: int, height: 
         picture = picture.resize((new_w, new_h))
         anchor_x = x
         anchor_y = y + height // 2 - picture.size[1] // 2
-    im.paste(picture, box=(anchor_x, anchor_y))
+    if os.path.splitext(picture_path)[1] == ".png":
+        im.paste(picture, box=(anchor_x, anchor_y), mask=picture)
+    else:
+        im.paste(picture, box=(anchor_x, anchor_y))
 
 
 def save_page(card_list: List[Image], grid: Tuple[int, int], filename, cut_line_width=3,

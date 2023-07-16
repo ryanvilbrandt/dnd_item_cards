@@ -1,0 +1,6 @@
+name = "Spellwrought Tattoo See Invisibility"
+type = "wondrous item, uncommon"
+requires_attunement = false
+image_path = "spellwrought_tattoo.webp"
+skip = false
+description = """Once the tattoo is applied to your skin (see rules), you can cast the spell See Invisibility, requiring no material components. The tattoo glows faintly while you cast the spell and for the spell's duration. Once the spell ends, the tattoo vanishes from your skin."""
