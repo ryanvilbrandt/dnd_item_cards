@@ -1,0 +1,4 @@
+image_is_card = true
+image_path = "potion_of_greater_healing.png"
+count = 2
+skip = false

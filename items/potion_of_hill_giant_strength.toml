@@ -1,0 +1,6 @@
+name = "Potion of Hill Giant Strength"
+type = "potion, uncommon"
+requires_attunement = false
+image_path = "potion_of_hill_giant_strength.jpg"
+skip = false
+description = """This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant. When you drink this potion, your Strength score changes to 21 for 1 hour."""

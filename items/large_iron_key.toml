@@ -1,0 +1,5 @@
+name = "Large Iron Key"
+type = "key"
+image_path = "iron_key.jpg"
+skip = false
+description = """A large iron key wedged under the seat of a chair in Chief Ripnugget's room."""

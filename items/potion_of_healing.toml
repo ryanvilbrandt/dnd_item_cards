@@ -1,0 +1,4 @@
+image_is_card = true
+image_path = "potion_of_healing.png"
+count = 1
+skip = false

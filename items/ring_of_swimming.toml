@@ -2,5 +2,5 @@ name = "Ring of Swimming"
 type = "ring, uncommon"
 requires_attunement = false
 image_path = "ring_of_swimming.jpg"
-skip = false
+skip = true
 description = """You have a swimming speed of 40 feet while wearing this ring. If you wear the ring for more than 8 hours without removing it for at least 1 hour, gills grow on your neck and you can breathe water but are no longer able to breathe air. The Remove Curse spell is needed to remove the gills and restore your breathing to normal."""

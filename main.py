@@ -18,23 +18,29 @@ picture_coords = (40, 190, 670, 450)
 def build_cards():
     cards = []
     for filepath in glob("items/*"):
-        im = build_card(filepath)
-        if im:
+        image_list = build_card(filepath)
+        if image_list:
             # im.show()
-            cards.append(im)
+            cards += image_list
     save_cards_to_pages(cards)
 
 
-def build_card(toml_path: str) -> Optional[Image]:
+def build_card(toml_path: str) -> Optional[List[Image]]:
     # Load the given toml dict
     toml_dict = open_toml(toml_path)
     if toml_dict.get("skip"):
         return None
     print(toml_path)
-    # Call class module code
-    im = get_template()
-    add_text(im, toml_dict)
-    return im
+    image_list = []
+    for _ in range(toml_dict.get("count", 1)):
+        if toml_dict.get("image_is_card"):
+            im = open_image("images/" + toml_dict["image_path"])
+        else:
+            # Call class module code
+            im = get_template()
+            add_text(im, toml_dict)
+        image_list.append(im)
+    return image_list
 
 
 def open_toml(filepath: str) -> dict[str, Any]:
@@ -43,7 +49,7 @@ def open_toml(filepath: str) -> dict[str, Any]:
 
 
 def get_template() -> Image:
-    filepath = f"template.jpg"
+    filepath = "template.jpg"
     return open_image(filepath)
 
 
