@@ -55,7 +55,10 @@ def get_template() -> Image:
 
 def add_text(im: Image, toml_dict: dict[str, Any]):
     name_box.add_text(im, toml_dict["name"])
-    subtitle_box.add_text(im, toml_dict["type"])
+    subtitle = toml_dict["type"]
+    if toml_dict.get("requires_attunement"):
+        subtitle += " (requires attunement)"
+    subtitle_box.add_text(im, subtitle)
     add_image(im, toml_dict["image_path"], *picture_coords)
     description_box.add_text(im, toml_dict["description"])
 

@@ -1,5 +1,5 @@
 name = "Keyring"
 type = "key"
 image_path = "keyring.jpg"
-skip = false
+skip = true
 description = """A keyring found on Chief Ripnugget's body."""
