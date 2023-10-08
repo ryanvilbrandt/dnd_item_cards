@@ -1,0 +1,5 @@
+name = "Seven-Pointed Star... Thing?"
+type = "key"
+image_path = "sihedron_key.jpg"
+skip = false
+description = """A silver-and-gold seven-pointed star; one surface is studded with nodules and blades, and the other features a thin, curved handle."""

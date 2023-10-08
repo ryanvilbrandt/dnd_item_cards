@@ -1,0 +1,5 @@
+name = "Ring of Force Shield"
+type = "ring, uncommon"
+image_path = "sihedron_ring.jpg"
+skip = false
+description = """While wearing this ring, you can cast shield of faith as a bonus action on yourself, gaining a +2 bonus to AC for 10 minutes. Once used, the ring can't be used again until the next dawn."""

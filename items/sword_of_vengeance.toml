@@ -1,0 +1,6 @@
+name = "Longsword, +1"
+type = "weapon, uncommon"
+requires_attunement = true
+image_path = "sword_of_vengeance.jpg"
+skip = false
+description = """You gain a +1 bonus to attack and damage rolls made with this magic weapon."""

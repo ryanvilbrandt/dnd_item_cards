@@ -2,5 +2,5 @@ name = "Boots of False Tracks"
 type = "boots, common"
 requires_attunement = false
 image_path = "boots_of_false_tracks.jpg"
-skip = false
+skip = true
 description = """While wearing the boots, you can choose to have them leave tracks like those of another kind of humanoid of your size. Only humanoids can wear these boots."""
