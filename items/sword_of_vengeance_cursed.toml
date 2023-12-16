@@ -2,7 +2,7 @@ name = "Longsword of Vengeance"
 type = "weapon, uncommon"
 requires_attunement = true
 image_path = "sword_of_vengeance.jpg"
-skip = false
+skip = true
 description = """You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
 Cursed! You have disadvantage on attack rolls made with weapons other than this one. When you take damage in combat, you must make a DC 15 Wisdom save. On a failed save, you must attack the creature that damaged you until you drop to 0 hit points or it does, or until you can't reach the creature to make a melee attack against it."""
