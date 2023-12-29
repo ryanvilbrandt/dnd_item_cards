@@ -1,4 +1,4 @@
-name = "Cold iron dagger of returning"
+name = "Dagger of returning"
 type = "weapon, uncommon"
 requires_attunement = false
 image_path = "dagger_of_returning.png"
