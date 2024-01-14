@@ -1,0 +1,8 @@
+name = "Cast-Off Armor (Splint)"
+type = "armor, common"
+requires_attunement = false
+image_path = "splint_mail.webp"
+skip = false
+description = """
+This Splint armor (AC 17, Str 15, Disadvantage on Stealth checks) has been magically altered so it can be removed as an action.
+"""
