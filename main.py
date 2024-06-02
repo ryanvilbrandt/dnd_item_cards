@@ -17,11 +17,16 @@ picture_coords = (40, 190, 670, 450)
 
 def build_cards():
     cards = []
-    for filepath in glob("items/*"):
-        image_list = build_card(filepath)
-        if image_list:
-            # im.show()
-            cards += image_list
+    for dirpath, dirnames, filenames in os.walk("items"):
+        for filename in filenames:
+            if not filename.endswith(".toml"):
+                continue
+            filepath = os.path.join(dirpath, filename)
+            print(filepath)
+            image_list = build_card(filepath)
+            if image_list:
+                # im.show()
+                cards += image_list
     save_cards_to_pages(cards)
 
 
