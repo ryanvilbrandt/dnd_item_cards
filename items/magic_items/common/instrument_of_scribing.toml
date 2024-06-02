@@ -1,0 +1,10 @@
+name = "Instrument of Scribing"
+type = "instrument, common"
+requires_attunement = true
+image_path = ""
+skip = false
+description = """
+This musical instrument has 3 charges. While you are playing it, you can use an action to expend 1 charge from the instrument and write a magical message on a nonmagical object or surface. The message can be up to six words long (13 if you're a bard) and is written in a language you know. The message fades away after 24 hours.
+
+The instrument regains all expended charges daily at dawn.
+"""

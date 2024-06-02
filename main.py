@@ -1,6 +1,5 @@
 import os
 import tomllib
-from glob import glob
 from typing import Any, List, Tuple, Optional
 
 from PIL.Image import Image
@@ -22,9 +21,9 @@ def build_cards():
             if not filename.endswith(".toml"):
                 continue
             filepath = os.path.join(dirpath, filename)
-            print(filepath)
             image_list = build_card(filepath)
             if image_list:
+                print(filepath)
                 # im.show()
                 cards += image_list
     save_cards_to_pages(cards)
@@ -35,13 +34,11 @@ def build_card(toml_path: str) -> Optional[List[Image]]:
     toml_dict = open_toml(toml_path)
     if toml_dict.get("skip"):
         return None
-    print(toml_path)
     image_list = []
     for _ in range(toml_dict.get("count", 1)):
         if toml_dict.get("image_is_card"):
             im = open_image("images/" + toml_dict["image_path"])
         else:
-            # Call class module code
             im = get_template()
             add_text(im, toml_dict)
         image_list.append(im)
@@ -87,4 +84,5 @@ if __name__ == "__main__":
     #     build_card("items/spellwrought_tattoo_see_invisibility.toml"),
     # ]
     # save_cards_to_pages(cards)
+    # im = build_card("items/magic_items/common/hat_of_vermin.toml")[0]
     # im.show()

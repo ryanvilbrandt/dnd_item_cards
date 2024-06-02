@@ -78,9 +78,10 @@ class TextBox:
         # Get max line width
         max_line_width = 0
         for line in lines:
-            line_width, line_height = font.getsize(line)
+            # line_width, line_height = font.getsize(line)
+            left, top, right, bottom = font.getbbox(line)
             # Keep track of the longest line width
-            max_line_width = max(max_line_width, line_width)
+            max_line_width = max(max_line_width, right - left)
 
         return lines, max_line_width, len(lines) * leading
 
@@ -288,6 +289,8 @@ def get_anchors(x: int, y: int, width: int, height: int, halign: HAlign, valign:
 
 def add_image(im: Image, picture_path: str, x: int, y: int, width: int, height: int,
               halign: HAlign = HAlign.CENTER, valign: VAlign = VAlign.CENTER):
+    if not picture_path:
+        return
     if DEBUG_TEXT_BOX_BORDERS:
         draw_box(im, x, y, width, height)
     picture: Image = Image.open(f"images/{picture_path}")
