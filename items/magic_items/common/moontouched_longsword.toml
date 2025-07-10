@@ -2,5 +2,4 @@ name = "Moon-Touched Longsword"
 type = "weapon, common"
 requires_attunement = false
 image_path = "moontouched_sword.jpg"
-skip = false
 description = """In darkness, the unsheathed blade of this longsword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet."""

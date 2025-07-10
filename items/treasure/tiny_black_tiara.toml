@@ -2,7 +2,6 @@ name = "Tiny Black Tiara"
 type = "treasure"
 requires_attunement = false
 image_path = "black_tiara.png"
-skip = true
 description = """
 This tiara is made from gems of black jet, and is sized for a Tiny creature. Given the meticulous detail required for a piece of this size, the craftsmanship is exquisite. It was likely made either by a remarkably skilled Medium-sized craftsman, or a moderately-skilled Tiny-sized craftsman.
 

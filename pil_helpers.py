@@ -308,10 +308,31 @@ def add_image(im: Image, picture_path: str, x: int, y: int, width: int, height: 
         picture = picture.resize((new_w, new_h))
         anchor_x = x
         anchor_y = y + height // 2 - picture.size[1] // 2
-    if os.path.splitext(picture_path)[1] == ".png":
-        im.paste(picture, box=(anchor_x, anchor_y), mask=picture)
-    else:
-        im.paste(picture, box=(anchor_x, anchor_y))
+    im.paste(picture, box=(anchor_x, anchor_y), mask=picture if has_transparency(picture) else None)
+
+
+def has_transparency(img: Image):
+    if img.format == "GIF":
+        return False
+    if "transparency" in img.info:
+        if not img.info["transparency"]:
+            return False
+        version = img.info.get("version", "")
+        if isinstance(version, str):
+            version = version.encode()
+        if version.startswith(b"GIF"):
+            return False
+        return True
+    if img.mode == "P":
+        transparent = img.info.get("transparency", -1)
+        for _, index in img.getcolors():
+            if index == transparent:
+                return True
+    elif img.mode == "RGBA":
+        extrema = img.getextrema()
+        if extrema[3][0] < 255:
+            return True
+    return False
 
 
 def save_page(card_list: List[Image], grid: Tuple[int, int], filename, cut_line_width=3,

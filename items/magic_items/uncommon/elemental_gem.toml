@@ -1,8 +1,7 @@
 name = "Fire Elemental Gem"
 type = "wondrous item, uncommon"
 requires_attunement = false
-image_path = ""
-skip = false
+image_path = "fire_elemental_gem.jpeg"
 description = """
 This gem contains a mote of elemental energy. When you use an action to break the gem, a fire elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost.
 """

@@ -2,5 +2,4 @@ name = "Scroll of Burning Hands"
 type = "scroll, common"
 requires_attunement = false
 image_path = "magic_scroll.webp"
-skip = true
 description = """This scroll can be used to cast the spell Burning Hands, with a save DC 13. See the wiki for the full rules on Spell Scrolls."""

@@ -1,8 +1,7 @@
 name = "Clockwork Amulet"
 type = "necklace, common"
 requires_attunement = false
-image_path = ""
-skip = false
+image_path = "clockwork_amulet.jpg"
 description = """
 When you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used, this property can't be used again until the next dawn.
 """

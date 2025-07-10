@@ -2,5 +2,4 @@ name = "Scroll of Flaming Sphere"
 type = "scroll, uncommon"
 requires_attunement = false
 image_path = "magic_scroll.webp"
-skip = true
 description = """This scroll can be used to cast the spell Flaming Sphere, with a save DC 13. Ask your DM for the full rules on Spell Scrolls."""

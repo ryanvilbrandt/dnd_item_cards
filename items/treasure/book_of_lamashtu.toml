@@ -2,7 +2,6 @@ name = "Prayer Book"
 type = "treasure"
 requires_attunement = false
 image_path = "book_of_lamashtu.png"
-skip = true
 description = """
 This magically preserved but still ancient prayer book is dedicated to the worship of Lamashtu, the Mother of Monsters. Written in Abyssal, a quick perusal finds numerous woodcut illustrations of horrific monsters bestowing gruesome death on helpless humanoid creatures.
 

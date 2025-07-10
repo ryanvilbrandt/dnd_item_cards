@@ -2,7 +2,6 @@ name = "Staff of Birdcalls"
 type = "staff, common"
 requires_attunement = false
 image_path = "staff_of_birdcalls.jpg"
-skip = true
 description = """
 This staff has 10 charges. While holding it, you can use an action to expend 1 charge from the staff and cause it to create the call of a lone bird that can be heard clearly from 60 feet away.
 The staff regains 1d6 + 4 charges at dawn. If you use the last charge, roll a d20. On a 1, the staff explodes in a harmless cloud of bird feathers.

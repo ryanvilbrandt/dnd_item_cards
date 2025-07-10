@@ -1,0 +1,8 @@
+name = "Flute of Illusions"
+type = "instrument, common"
+requires_attunement = true
+image_path = "flute_of_illusions2.png"
+description = """
+While playing this flute, you can create harmless, illusory visual effects within a 5-foot-radius (15 for bards) sphere centered on the instrument. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing.
+"""
+url = "wiki.harebrained.dev/s/em/instrument-of-illusions"

@@ -2,5 +2,4 @@ name = "Everburning Candle"
 type = "wondrous item, common"
 requires_attunement = false
 image_path = "everburning_candle.jpg"
-skip = true
 description = """This candle burns continuously, but it creates no heat and doesn't use oxygen. The candle's flame can be covered or hidden but not smothered or quenched. It gives off bright light in a 5-foot radius and dim light for an additional 5 feet."""

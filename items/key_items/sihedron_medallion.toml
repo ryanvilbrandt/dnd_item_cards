@@ -2,5 +2,4 @@ name = "Sihedron Medallion"
 type = "wondrous item, rare"
 requires_attunement = true
 image_path = "sihedron_medallion.jpg"
-skip = true
 description = """While attuned to the medallion, you gain a +1 bonus to ability checks and saving throws. Once per day, as a free action, you may use the medallion to give yourself 1d4 + 4 temporary hit points. Placed on the neck of a dead body, a Sihedron medallion preserves the body indefinitely via a gentle repose effect."""

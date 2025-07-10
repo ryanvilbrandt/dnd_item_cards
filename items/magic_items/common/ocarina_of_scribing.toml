@@ -1,0 +1,8 @@
+name = "Ocarina of Scribing"
+type = "instrument, common"
+requires_attunement = true
+image_path = "ocarina_of_scribing.png"
+description = """
+While playing this ocarina, you can use an action to expend 1 charge and write a magical message on a nonmagical object or surface, up to six words long (13 for bards) and written in a language you know. The message fades after 24 hours. The ocarina has 3 charges and regains all expended charges daily at dawn.
+"""
+url = "wiki.harebrained.dev/s/em/instrument-of-scribing"

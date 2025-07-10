@@ -1,4 +1,4 @@
+name = "Potion of Healing"
 image_is_card = true
 image_path = "potion_of_healing.png"
-count = 2
 skip = true

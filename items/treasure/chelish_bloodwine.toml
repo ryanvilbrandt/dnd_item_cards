@@ -2,7 +2,6 @@ name = "Bottle of Chelish Bloodwine"
 type = "treasure"
 requires_attunement = false
 image_path = "bottle_of_wine.png"
-skip = true
 description = """
 This bold and robust red wine comes from the vineyards of Cheliax, known for their devilish flavor and high alcohol content.
 

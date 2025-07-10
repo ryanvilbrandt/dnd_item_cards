@@ -1,8 +1,5 @@
 name = "Cloak of Billowing"
 type = "cloak, common"
 requires_attunement = false
-image_path = ""
-skip = false
-description = """
-While wearing this cloak, you can use a bonus action to make it billow dramatically.
-"""
+image_path = "Cloak-of-Billowing.webp"
+description = """While wearing this cloak, you can use a bonus action to make it billow dramatically."""
